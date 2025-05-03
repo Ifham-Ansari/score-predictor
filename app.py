@@ -67,6 +67,10 @@ file_path = os.path.join(os.path.dirname(__file__), 'pipe.pkl')
 with open(file_path, 'rb') as f:
     pipe = pickle.load(f)
 
+# Load trained XGBoost model
+model = XGBRegressor()
+model.load_model("xgb_model.json")
+
 
 st.set_page_config(page_title="T20i Score Predictor", page_icon="🏏", layout="wide")
 
