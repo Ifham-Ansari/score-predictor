@@ -93,13 +93,6 @@ lottie_predicting = load_lottieurl(lottie_url_predicting)
 
 st.sidebar.image('teams.jpeg', use_column_width=True)  
 
-
-
-# def open_start():
-#     subprocess.run(["streamlit", "run", "start.py"])
-# if st.button("Go Back"):
-#         open_start()
-
 st.markdown("<h1 style='text-align: center; margin-top: -6vh;margin-bottom:3vh; color: #FF5733;'>T20i Cricket Score Predictor</h1>", unsafe_allow_html=True)
 
 
