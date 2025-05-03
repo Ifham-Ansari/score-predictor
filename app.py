@@ -61,7 +61,12 @@ cities = ['Colombo',
 
 # #DCD0B7
 
-pipe = pickle.load(open('pipe.pkl', 'rb'))
+import os
+
+file_path = os.path.join(os.path.dirname(__file__), 'pipe.pkl')
+with open(file_path, 'rb') as f:
+    pipe = pickle.load(f)
+
 
 st.set_page_config(page_title="T20i Score Predictor", page_icon="🏏", layout="wide")
 
